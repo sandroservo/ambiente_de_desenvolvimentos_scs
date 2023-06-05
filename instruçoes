@@ -1,0 +1,15 @@
+If you need to restart after modifying Dockerfile and have Troubleshooting:
+Verify all containers running: docker ps -a
+Stop all containers and remove: docker stop $(docker ps -a -q) and docker rm $(docker ps -a -q)
+Try to start again docker-compose up -d
+
+
+1 -chmod -R 777 projeto_scs
+
+2 acessar o container
+docker-compose exec backend   bash
+
+3 roda o  camndo composer install
+
+4 depois  rodar o comando
+php artisan key:generate
